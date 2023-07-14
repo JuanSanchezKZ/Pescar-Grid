@@ -1,3 +1,88 @@
-h1 {
-    color: red;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;900&display=swap');
+
+:root {
+    --color-principal: #102F49;
+    --ancho-maximo: 1200px;
 }
+
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-principal);
+    background-color: #e3e3e3;
+    font-size: 1.2em;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+header, footer {
+    max-width: var(--ancho-maximo);
+    height:100px;
+    background-color:var(--color-principal);
+    display:grid;
+    align-items: center;
+    margin:auto;
+}
+
+header a, footer a {
+ color:#FFEA8D;
+}
+
+header img, footer img {
+ vertical-align: middle;
+ margin:0 12px;
+}
+
+/* main */
+
+main {
+    max-width: var(--ancho-maximo);
+    margin:auto;
+    background-color: #FFF;
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto 160px;
+}
+
+.contenido {
+    background-color: #F4F4F4;
+    padding: 20px;
+    grid-column: span 4;
+    column-gap: 24px;
+}
+
+.contenido article {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 80px 1fr;
+    column-gap: 24px;
+}
+
+.contenido article img {
+    padding-bottom: 24px;
+    grid-column: span 2;
+    grid-row: span 2;
+    width:100%;
+    
+}
+
+.notas {
+    background-color: #974343;
+}
+
+.notas article {
+    color: #F4f4f4;
+    text-align: center;
+    margin-top:56px;
+}
+
+
